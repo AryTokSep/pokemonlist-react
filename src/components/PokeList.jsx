@@ -1,12 +1,13 @@
-import React from "react"
+import React from 'react'
 
 const PokeList = ({ pokemonList, setSelectedPokemonName }) => {
     return (
       <div style={style.gridContent}>
         {pokemonList.map((item) => (
-          <div key={item.name} 
-          style={style.card}
-          onClick={() => setSelectedPokemonName(item.name)}
+          <div 
+            key={item.name}
+            style={style.card}
+            onClick={() => setSelectedPokemonName(item.name)}
           >
             {item.name}
           </div>
